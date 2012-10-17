@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin>
+
+   <extension
+         id="product"
+         point="org.eclipse.core.runtime.products">
+      <product
+            name="at.descher.eclipse.bug389063"
+            application="org.eclipse.e4.ui.workbench.swt.E4Application">
+         <property
+               name="RICH_SAMPLE"
+               value="TRUE">
+         </property>
+         <property
+               name="clearPersistedState"
+               value="true">
+         </property>
+         <property
+               name="applicationCSS"
+               value="platform:/plugin/at.descher.eclipse.bug389063/css/default.css">
+         </property>
+         <property
+               name="appName"
+               value="at.descher.eclipse.bug389063">
+         </property>
+      </product>
+   </extension>
+   <extension
+         point="org.eclipse.ui.menus">
+      <menuContribution
+            allPopups="false"
+            locationURI="toolbar:main">
+         <dynamic
+               class="at.descher.eclipse.bug389063.E3DynamicMenuContribution"
+               id="at.descher.eclipse.bug389063.E3DynamicMenuContribution">
+         </dynamic>
+      </menuContribution>
+   </extension>
+
+</plugin>

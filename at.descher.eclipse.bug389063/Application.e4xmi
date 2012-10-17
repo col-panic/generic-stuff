@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<application:Application xmi:version="2.0"
+	xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:advanced="http://www.eclipse.org/ui/2010/UIModel/application/ui/advanced"
+	xmlns:application="http://www.eclipse.org/ui/2010/UIModel/application"
+	xmlns:basic="http://www.eclipse.org/ui/2010/UIModel/application/ui/basic"
+	xmlns:menu="http://www.eclipse.org/ui/2010/UIModel/application/ui/menu"
+	xmi:id="_3fg5oAp1EeK8ULSwuUCzow" elementId="org.eclipse.e4.ide.application"
+	bindingContexts="_3fg5qAp1EeK8ULSwuUCzow">
+	<children xsi:type="basic:TrimmedWindow" xmi:id="_3fg5oQp1EeK8ULSwuUCzow"
+		label="at.descher.eclipse.bug389063" width="500" height="400">
+		<children xsi:type="advanced:PerspectiveStack" xmi:id="_3fhgtwp1EeK8ULSwuUCzow">
+			<children xsi:type="advanced:Perspective" xmi:id="_3fhguAp1EeK8ULSwuUCzow">
+				<children xsi:type="basic:PartSashContainer" xmi:id="_3fhguQp1EeK8ULSwuUCzow">
+					<children xsi:type="basic:PartStack" xmi:id="_3fhgugp1EeK8ULSwuUCzow">
+						<children xsi:type="basic:Part" xmi:id="_3fhguwp1EeK8ULSwuUCzow"
+							elementId="part:sample.part"
+							contributionURI="bundleclass://at.descher.eclipse.bug389063/at.descher.eclipse.bug389063.parts.SamplePart"
+							label="Sample Part">
+							<menus xmi:id="_Dv3mEAp4EeK8ULSwuUCzow" elementId="view.menu:sample.part"
+								label="view.menu:sample.part">
+								<tags>ViewMenu</tags>
+								<children xsi:type="menu:DirectMenuItem" xmi:id="_JQbEkAp4EeK8ULSwuUCzow"
+									elementId="at.descher.eclipse.bug389063.directmenuitem.0"
+									label="testMenuItem"
+									contributionURI="bundleclass://at.descher.eclipse.bug389063/at.descher.eclipse.bug389063.direct.DirectMenuItem" />
+								<children xsi:type="menu:DynamicMenuContribution"
+									xmi:id="_JTeEkAp4EeK8ULSwuUCzow" elementId="at.descher.eclipse.bug389063.dynamicmenucontribution.0"
+									label="irrelevantLabelWillNotBeShown"
+									contributionURI="bundleclass://at.descher.eclipse.bug389063/at.descher.eclipse.bug389063.dynamic.DynamicMainMenuContribution" />
+							</menus>
+							<toolbar xmi:id="_m1CoYAyOEeKvsPwErPptVg" elementId="at.descher.eclipse.bug389063.toolbar.0">
+								<children xsi:type="menu:DirectToolItem" xmi:id="_ovqiAAyOEeKvsPwErPptVg"
+									elementId="at.descher.eclipse.bug389063.directtoolitem.0"
+									label="directToolItem">
+									<menu xmi:id="_qFqEkAyOEeKvsPwErPptVg"
+										elementId="at.descher.eclipse.bug389063.toolbarCommandMenu"
+										label="toolbarCommandMenu">
+										<children xsi:type="menu:HandledMenuItem" xmi:id="_L8ifcAyPEeKvsPwErPptVg"
+											elementId="at.descher.eclipse.bug389063.handledmenuitem.0"
+											label="quit" command="_3fg5qwp1EeK8ULSwuUCzow" />
+										<children xsi:type="menu:Menu" xmi:id="_RbsPwAyPEeKvsPwErPptVg"
+											elementId="at.descher.eclipse.bug389063.menu.0">
+											<children xsi:type="menu:HandledMenuItem" xmi:id="_SGVIMAyPEeKvsPwErPptVg"
+												elementId="at.descher.eclipse.bug389063.handledmenuitem.1"
+												label="quit" command="_3fg5qwp1EeK8ULSwuUCzow" />
+										</children>
+									</menu>
+								</children>
+							</toolbar>
+						</children>
+					</children>
+				</children>
+			</children>
+		</children>
+		<mainMenu xmi:id="_3fhgsAp1EeK8ULSwuUCzow" elementId="menu:org.eclipse.ui.main.menu">
+			<children xsi:type="menu:Menu" xmi:id="_3fhgsQp1EeK8ULSwuUCzow"
+				elementId="menu:org.eclipse.ui.main.menu.File" label="File">
+				<children xsi:type="menu:HandledMenuItem" xmi:id="_3fhgsgp1EeK8ULSwuUCzow"
+					label="Open"
+					iconURI="platform:/plugin/at.descher.eclipse.bug389063/icons/sample.gif"
+					command="_3fg5rwp1EeK8ULSwuUCzow" />
+				<children xsi:type="menu:HandledMenuItem" xmi:id="_3fhgswp1EeK8ULSwuUCzow"
+					label="Save"
+					iconURI="platform:/plugin/at.descher.eclipse.bug389063/icons/save_edit.gif"
+					command="_3fg5sgp1EeK8ULSwuUCzow" />
+				<children xsi:type="menu:HandledMenuItem" xmi:id="_3fhgtAp1EeK8ULSwuUCzow"
+					label="Quit" command="_3fg5qwp1EeK8ULSwuUCzow" />
+				<children xsi:type="menu:DynamicMenuContribution" xmi:id="_JTeEkAp4EeK8SLUwuUCzow"
+					elementId="at.descher.eclipse.bug389063.dynamicmenucontribution.1"
+					label="irrelevantLabelWillNotBeShown"
+					contributionURI="bundleclass://at.descher.eclipse.bug389063/at.descher.eclipse.bug389063.dynamic.DynamicMainMenuContribution" />
+			</children>
+			<children xsi:type="menu:Menu" xmi:id="_3fhgtQp1EeK8ULSwuUCzow"
+				elementId="menu:org.eclipse.ui.main.menu.Help" label="Help">
+				<children xsi:type="menu:HandledMenuItem" xmi:id="_3fhgtgp1EeK8ULSwuUCzow"
+					label="About" command="_3fg5tQp1EeK8ULSwuUCzow" />
+			</children>
+		</mainMenu>
+		<trimBars xmi:id="_3fhgvAp1EeK8ULSwuUCzow">
+			<children xsi:type="menu:ToolBar" xmi:id="_3fhgvQp1EeK8ULSwuUCzow"
+				elementId="toolbar:org.eclipse.ui.main.toolbar">
+				<children xsi:type="menu:HandledToolItem" xmi:id="_3fhgvgp1EeK8ULSwuUCzow"
+					iconURI="platform:/plugin/at.descher.eclipse.bug389063/icons/sample.gif"
+					command="_3fg5rwp1EeK8ULSwuUCzow" />
+				<children xsi:type="menu:HandledToolItem" xmi:id="_3fhgvwp1EeK8ULSwuUCzow"
+					iconURI="platform:/plugin/at.descher.eclipse.bug389063/icons/save_edit.gif"
+					command="_3fg5sgp1EeK8ULSwuUCzow" />
+			</children>
+		</trimBars>
+	</children>
+	<handlers xmi:id="_3fg5rAp1EeK8ULSwuUCzow"
+		contributionURI="bundleclass://at.descher.eclipse.bug389063/at.descher.eclipse.bug389063.handlers.QuitHandler"
+		command="_3fg5qwp1EeK8ULSwuUCzow" />
+	<handlers xmi:id="_3fg5sAp1EeK8ULSwuUCzow"
+		contributionURI="bundleclass://at.descher.eclipse.bug389063/at.descher.eclipse.bug389063.handlers.OpenHandler"
+		command="_3fg5rwp1EeK8ULSwuUCzow" />
+	<handlers xmi:id="_3fg5swp1EeK8ULSwuUCzow"
+		contributionURI="bundleclass://at.descher.eclipse.bug389063/at.descher.eclipse.bug389063.handlers.SaveHandler"
+		command="_3fg5sgp1EeK8ULSwuUCzow" />
+	<handlers xmi:id="_3fg5tgp1EeK8ULSwuUCzow"
+		contributionURI="bundleclass://at.descher.eclipse.bug389063/at.descher.eclipse.bug389063.handlers.AboutHandler"
+		command="_3fg5tQp1EeK8ULSwuUCzow" />
+	<bindingTables xmi:id="_3fg5rQp1EeK8ULSwuUCzow"
+		bindingContext="_3fg5qAp1EeK8ULSwuUCzow">
+		<bindings xmi:id="_3fg5rgp1EeK8ULSwuUCzow" keySequence="M1+Q"
+			command="_3fg5qwp1EeK8ULSwuUCzow" />
+		<bindings xmi:id="_3fg5sQp1EeK8ULSwuUCzow" keySequence="M1+O"
+			command="_3fg5rwp1EeK8ULSwuUCzow" />
+		<bindings xmi:id="_3fg5tAp1EeK8ULSwuUCzow" keySequence="M1+S"
+			command="_3fg5sgp1EeK8ULSwuUCzow" />
+		<bindings xmi:id="_3fg5twp1EeK8ULSwuUCzow" keySequence="M1+A"
+			command="_3fg5tQp1EeK8ULSwuUCzow" />
+	</bindingTables>
+	<rootContext xmi:id="_3fg5qAp1EeK8ULSwuUCzow"
+		elementId="org.eclipse.ui.contexts.dialogAndWindow" name="In Dialog and Windows">
+		<children xmi:id="_3fg5qQp1EeK8ULSwuUCzow" elementId="org.eclipse.ui.contexts.window"
+			name="In Windows" />
+		<children xmi:id="_3fg5qgp1EeK8ULSwuUCzow" elementId="org.eclipse.ui.contexts.dialog"
+			name="In Dialogs" />
+	</rootContext>
+	<commands xmi:id="_3fg5qwp1EeK8ULSwuUCzow" elementId="org.eclipse.ui.file.exit"
+		commandName="quitCommand" />
+	<commands xmi:id="_3fg5rwp1EeK8ULSwuUCzow" elementId="at.descher.eclipse.bug389063.open"
+		commandName="openCommand" />
+	<commands xmi:id="_3fg5sgp1EeK8ULSwuUCzow" elementId="org.eclipse.ui.file.save"
+		commandName="saveCommand" />
+	<commands xmi:id="_3fg5tQp1EeK8ULSwuUCzow" elementId="org.eclipse.ui.help.aboutAction"
+		commandName="aboutCommand" />
+	<addons xmi:id="_3fg5ogp1EeK8ULSwuUCzow" elementId="org.eclipse.e4.core.commands.service"
+		contributionURI="bundleclass://org.eclipse.e4.core.commands/org.eclipse.e4.core.commands.CommandServiceAddon" />
+	<addons xmi:id="_3fg5owp1EeK8ULSwuUCzow" elementId="org.eclipse.e4.ui.contexts.service"
+		contributionURI="bundleclass://org.eclipse.e4.ui.services/org.eclipse.e4.ui.services.ContextServiceAddon" />
+	<addons xmi:id="_3fg5pAp1EeK8ULSwuUCzow" elementId="org.eclipse.e4.ui.bindings.service"
+		contributionURI="bundleclass://org.eclipse.e4.ui.bindings/org.eclipse.e4.ui.bindings.BindingServiceAddon" />
+	<addons xmi:id="_3fg5pQp1EeK8ULSwuUCzow" elementId="org.eclipse.e4.ui.workbench.commands.model"
+		contributionURI="bundleclass://org.eclipse.e4.ui.workbench/org.eclipse.e4.ui.internal.workbench.addons.CommandProcessingAddon" />
+	<addons xmi:id="_3fg5pgp1EeK8ULSwuUCzow" elementId="org.eclipse.e4.ui.workbench.contexts.model"
+		contributionURI="bundleclass://org.eclipse.e4.ui.workbench/org.eclipse.e4.ui.internal.workbench.addons.ContextProcessingAddon" />
+	<addons xmi:id="_3fg5pwp1EeK8ULSwuUCzow" elementId="org.eclipse.e4.ui.workbench.bindings.model"
+		contributionURI="bundleclass://org.eclipse.e4.ui.workbench.swt/org.eclipse.e4.ui.workbench.swt.util.BindingProcessingAddon" />
+</application:Application>
