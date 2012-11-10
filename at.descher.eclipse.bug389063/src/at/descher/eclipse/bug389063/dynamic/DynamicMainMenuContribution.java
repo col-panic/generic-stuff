@@ -17,7 +17,7 @@ public class DynamicMainMenuContribution {
 
 	@AboutToShow
 	public void aboutToShow(List<MMenuElement> items) {
-		System.out.println("aboutToShow() items-size: "+items.size());
+		System.out.println("aboutToShow() items-size: " + items.size());
 		MDirectMenuItem dynamicItem = MMenuFactory.INSTANCE
 				.createDirectMenuItem();
 		dynamicItem.setLabel("Dynamic Menu Item (" + new Date() + ")");
@@ -42,7 +42,8 @@ public class DynamicMainMenuContribution {
 
 		MDirectMenuItem dynamicCheckMenuItem = MMenuFactory.INSTANCE
 				.createDirectMenuItem();
-		dynamicCheckMenuItem.setLabel("Check: section above separator shows 2 DirectMenuItems");
+		dynamicCheckMenuItem.setLabel("Check: section above separator shows "
+				+ items.size() + " DirectMenuItems (including separator)");
 		dynamicCheckMenuItem.setType(ItemType.CHECK);
 		dynamicCheckMenuItem.setSelected(addSecond);
 		dynamicCheckMenuItem
@@ -52,7 +53,7 @@ public class DynamicMainMenuContribution {
 
 	@AboutToHide
 	public void aboutToHide(List<MMenuElement> items) {
-		System.out.println("aboutToHide() items-size: "+items.size());
+		System.out.println("aboutToHide() items-size: " + items.size());
 		addSecond = !addSecond;
 	}
 

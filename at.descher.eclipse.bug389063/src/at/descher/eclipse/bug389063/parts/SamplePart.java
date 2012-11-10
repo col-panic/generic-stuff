@@ -11,7 +11,9 @@
 package at.descher.eclipse.bug389063.parts;
 
 import javax.annotation.PostConstruct;
+
 import org.eclipse.e4.ui.di.Focus;
+import org.eclipse.e4.ui.workbench.swt.modeling.EMenuService;
 import org.eclipse.jface.viewers.TableViewer;
 import org.eclipse.swt.SWT;
 import org.eclipse.swt.layout.GridData;
@@ -24,8 +26,10 @@ public class SamplePart {
 	private Label label;
 	private TableViewer tableViewer;
 
+	private static final String ID_PART_POPUP_MENU = "popup.menu:sample.part";
+	
 	@PostConstruct
-	public void createComposite(Composite parent) {
+	public void createComposite(Composite parent, final EMenuService menuService) {
 		parent.setLayout(new GridLayout());
 
 		label = new Label(parent, SWT.NONE);
@@ -38,6 +42,9 @@ public class SamplePart {
 		tableViewer.add("Sample item 4");
 		tableViewer.add("Sample item 5");
 		tableViewer.getTable().setLayoutData(new GridData(GridData.FILL_BOTH));
+		
+		menuService.registerContextMenu(tableViewer.getTable(),
+				ID_PART_POPUP_MENU);
 	}
 
 	@Focus
