@@ -55,14 +55,30 @@ public class Bug388402TestShell extends Shell {
 	
 		Menu menu = new Menu(list);
 		MenuItem deleteElement = new MenuItem(menu, SWT.PUSH);
-		deleteElement.setText("delete element");
+		deleteElement.setText("delete element (NPE after removal of last element or possibly sooner)");
 		deleteElement.addSelectionListener(new SelectionAdapter() {
 			@Override
 			public void widgetSelected(SelectionEvent e) {
 				try {
 					System.out.println("removing "+list.getSelectionIndex()+" "+list.getSelection()[0]);
 					list.remove(list.getSelectionIndex());
-					list.update();
+					super.widgetSelected(e);
+				} catch (Exception ex) {
+					ex.printStackTrace();
+				}
+
+			}
+		});
+		
+		MenuItem deleteElement2 = new MenuItem(menu, SWT.PUSH);
+		deleteElement2.setText("delete element (instant NPE)");
+		deleteElement2.addSelectionListener(new SelectionAdapter() {
+			@Override
+			public void widgetSelected(SelectionEvent e) {
+				try {
+					System.out.println("removing "+list.getSelectionIndex()+" "+list.getSelection()[0]);
+					list.remove(list.getSelectionIndex());
+					list.redraw();
 					super.widgetSelected(e);
 				} catch (Exception ex) {
 					ex.printStackTrace();
