@@ -1,10 +1,17 @@
 
 
+
 import org.eclipse.swt.SWT;
 import org.eclipse.swt.widgets.Display;
+import org.eclipse.swt.widgets.Event;
+import org.eclipse.swt.widgets.Listener;
 import org.eclipse.swt.widgets.Menu;
 import org.eclipse.swt.widgets.MenuItem;
 import org.eclipse.swt.widgets.Shell;
+import org.eclipse.swt.events.KeyAdapter;
+import org.eclipse.swt.events.KeyEvent;
+import org.eclipse.swt.events.MouseAdapter;
+import org.eclipse.swt.events.MouseEvent;
 import org.eclipse.swt.events.SelectionAdapter;
 import org.eclipse.swt.events.SelectionEvent;
 import org.eclipse.swt.layout.FillLayout;
@@ -52,6 +59,19 @@ public class Bug388402TestShell extends Shell {
 			list.add(ELEMENTS[i]);
 		}
 		
+		list.addKeyListener(new KeyAdapter() {
+			@Override
+			public void keyPressed(KeyEvent e) {
+				if(e.character=='d') {
+					try {
+						System.out.println("removing "+list.getSelectionIndex()+" "+list.getSelection()[0]);
+						list.remove(list.getSelectionIndex());
+					} catch (Exception ex) {
+						ex.printStackTrace();
+					}
+				}
+			}
+		});
 	
 		Menu menu = new Menu(list);
 		MenuItem deleteElement = new MenuItem(menu, SWT.PUSH);
