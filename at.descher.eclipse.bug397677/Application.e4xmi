@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<application:Application xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:advanced="http://www.eclipse.org/ui/2010/UIModel/application/ui/advanced" xmlns:application="http://www.eclipse.org/ui/2010/UIModel/application" xmlns:basic="http://www.eclipse.org/ui/2010/UIModel/application/ui/basic" xmlns:menu="http://www.eclipse.org/ui/2010/UIModel/application/ui/menu" xmi:id="_KKA_UFmmEeKsR_HiJkFiWw" elementId="org.eclipse.e4.ide.application" bindingContexts="_KKA_WFmmEeKsR_HiJkFiWw">
+  <children xsi:type="basic:TrimmedWindow" xmi:id="_KKA_UVmmEeKsR_HiJkFiWw" label="at.descher.eclipse.bug397677" width="500" height="400">
+    <children xsi:type="advanced:PerspectiveStack" xmi:id="_KKBmdFmmEeKsR_HiJkFiWw">
+      <children xsi:type="advanced:Perspective" xmi:id="_KKBmdVmmEeKsR_HiJkFiWw">
+        <children xsi:type="basic:PartSashContainer" xmi:id="_KKCNcFmmEeKsR_HiJkFiWw">
+          <children xsi:type="basic:PartStack" xmi:id="_KKCNcVmmEeKsR_HiJkFiWw">
+            <children xsi:type="basic:Part" xmi:id="_KKCNclmmEeKsR_HiJkFiWw" elementId="sample.part" contributionURI="bundleclass://at.descher.eclipse.bug397677/.parts.SamplePart" label="Sample Part">
+              <toolbar xmi:id="_MIxyEFmmEeKsR_HiJkFiWw" elementId="at.descher.eclipse.bug397677.toolbar.0">
+                <children xsi:type="menu:HandledToolItem" xmi:id="_Mp2e0FmmEeKsR_HiJkFiWw" elementId="at.descher.eclipse.bug397677.handledtoolitem.0"/>
+              </toolbar>
+            </children>
+          </children>
+        </children>
+      </children>
+    </children>
+    <mainMenu xmi:id="_KKBmbVmmEeKsR_HiJkFiWw" elementId="menu:org.eclipse.ui.main.menu">
+      <children xsi:type="menu:Menu" xmi:id="_KKBmblmmEeKsR_HiJkFiWw" label="File">
+        <children xsi:type="menu:HandledMenuItem" xmi:id="_KKBmb1mmEeKsR_HiJkFiWw" label="Open" iconURI="platform:/plugin/at.descher.eclipse.bug397677/icons/sample.gif" command="_KKBmZFmmEeKsR_HiJkFiWw"/>
+        <children xsi:type="menu:HandledMenuItem" xmi:id="_KKBmcFmmEeKsR_HiJkFiWw" label="Save" iconURI="platform:/plugin/at.descher.eclipse.bug397677/icons/save_edit.gif" command="_KKBmZ1mmEeKsR_HiJkFiWw"/>
+        <children xsi:type="menu:HandledMenuItem" xmi:id="_KKBmcVmmEeKsR_HiJkFiWw" label="Quit" command="_KKBmYFmmEeKsR_HiJkFiWw"/>
+      </children>
+      <children xsi:type="menu:Menu" xmi:id="_KKBmclmmEeKsR_HiJkFiWw" label="Help">
+        <children xsi:type="menu:HandledMenuItem" xmi:id="_KKBmc1mmEeKsR_HiJkFiWw" label="About" command="_KKBmalmmEeKsR_HiJkFiWw"/>
+      </children>
+    </mainMenu>
+    <trimBars xmi:id="_KKCNc1mmEeKsR_HiJkFiWw">
+      <children xsi:type="menu:ToolBar" xmi:id="_KKCNdFmmEeKsR_HiJkFiWw" elementId="toolbar:org.eclipse.ui.main.toolbar">
+        <children xsi:type="menu:HandledToolItem" xmi:id="_KKCNdVmmEeKsR_HiJkFiWw" iconURI="platform:/plugin/at.descher.eclipse.bug397677/icons/sample.gif" command="_KKBmZFmmEeKsR_HiJkFiWw"/>
+        <children xsi:type="menu:HandledToolItem" xmi:id="_KKCNdlmmEeKsR_HiJkFiWw" iconURI="platform:/plugin/at.descher.eclipse.bug397677/icons/save_edit.gif" command="_KKBmZ1mmEeKsR_HiJkFiWw"/>
+      </children>
+    </trimBars>
+  </children>
+  <handlers xmi:id="_KKBmYVmmEeKsR_HiJkFiWw" contributionURI="bundleclass://at.descher.eclipse.bug397677/handlers.QuitHandler" command="_KKBmYFmmEeKsR_HiJkFiWw"/>
+  <handlers xmi:id="_KKBmZVmmEeKsR_HiJkFiWw" contributionURI="bundleclass://at.descher.eclipse.bug397677/handlers.OpenHandler" command="_KKBmZFmmEeKsR_HiJkFiWw"/>
+  <handlers xmi:id="_KKBmaFmmEeKsR_HiJkFiWw" contributionURI="bundleclass://at.descher.eclipse.bug397677/handlers.SaveHandler" command="_KKBmZ1mmEeKsR_HiJkFiWw"/>
+  <handlers xmi:id="_KKBma1mmEeKsR_HiJkFiWw" contributionURI="bundleclass://at.descher.eclipse.bug397677/handlers.AboutHandler" command="_KKBmalmmEeKsR_HiJkFiWw"/>
+  <bindingTables xmi:id="_KKBmYlmmEeKsR_HiJkFiWw" bindingContext="_KKA_WFmmEeKsR_HiJkFiWw">
+    <bindings xmi:id="_KKBmY1mmEeKsR_HiJkFiWw" keySequence="M1+Q" command="_KKBmYFmmEeKsR_HiJkFiWw"/>
+    <bindings xmi:id="_KKBmZlmmEeKsR_HiJkFiWw" keySequence="M1+O" command="_KKBmZFmmEeKsR_HiJkFiWw"/>
+    <bindings xmi:id="_KKBmaVmmEeKsR_HiJkFiWw" keySequence="M1+S" command="_KKBmZ1mmEeKsR_HiJkFiWw"/>
+    <bindings xmi:id="_KKBmbFmmEeKsR_HiJkFiWw" keySequence="M1+A" command="_KKBmalmmEeKsR_HiJkFiWw"/>
+  </bindingTables>
+  <rootContext xmi:id="_KKA_WFmmEeKsR_HiJkFiWw" elementId="org.eclipse.ui.contexts.dialogAndWindow" name="In Dialog and Windows">
+    <children xmi:id="_KKA_WVmmEeKsR_HiJkFiWw" elementId="org.eclipse.ui.contexts.window" name="In Windows"/>
+    <children xmi:id="_KKA_WlmmEeKsR_HiJkFiWw" elementId="org.eclipse.ui.contexts.dialog" name="In Dialogs"/>
+  </rootContext>
+  <commands xmi:id="_KKBmYFmmEeKsR_HiJkFiWw" elementId="org.eclipse.ui.file.exit" commandName="quitCommand"/>
+  <commands xmi:id="_KKBmZFmmEeKsR_HiJkFiWw" elementId="at.descher.eclipse.bug397677.open" commandName="openCommand"/>
+  <commands xmi:id="_KKBmZ1mmEeKsR_HiJkFiWw" elementId="org.eclipse.ui.file.save" commandName="saveCommand"/>
+  <commands xmi:id="_KKBmalmmEeKsR_HiJkFiWw" elementId="org.eclipse.ui.help.aboutAction" commandName="aboutCommand"/>
+  <addons xmi:id="_KKA_UlmmEeKsR_HiJkFiWw" elementId="org.eclipse.e4.core.commands.service" contributionURI="bundleclass://org.eclipse.e4.core.commands/org.eclipse.e4.core.commands.CommandServiceAddon"/>
+  <addons xmi:id="_KKA_U1mmEeKsR_HiJkFiWw" elementId="org.eclipse.e4.ui.contexts.service" contributionURI="bundleclass://org.eclipse.e4.ui.services/org.eclipse.e4.ui.services.ContextServiceAddon"/>
+  <addons xmi:id="_KKA_VFmmEeKsR_HiJkFiWw" elementId="org.eclipse.e4.ui.bindings.service" contributionURI="bundleclass://org.eclipse.e4.ui.bindings/org.eclipse.e4.ui.bindings.BindingServiceAddon"/>
+  <addons xmi:id="_KKA_VVmmEeKsR_HiJkFiWw" elementId="org.eclipse.e4.ui.workbench.commands.model" contributionURI="bundleclass://org.eclipse.e4.ui.workbench/org.eclipse.e4.ui.internal.workbench.addons.CommandProcessingAddon"/>
+  <addons xmi:id="_KKA_VlmmEeKsR_HiJkFiWw" elementId="org.eclipse.e4.ui.workbench.contexts.model" contributionURI="bundleclass://org.eclipse.e4.ui.workbench/org.eclipse.e4.ui.internal.workbench.addons.ContextProcessingAddon"/>
+  <addons xmi:id="_KKA_V1mmEeKsR_HiJkFiWw" elementId="org.eclipse.e4.ui.workbench.bindings.model" contributionURI="bundleclass://org.eclipse.e4.ui.workbench.swt/org.eclipse.e4.ui.workbench.swt.util.BindingProcessingAddon"/>
+</application:Application>
