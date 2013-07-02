@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<application:Application xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:advanced="http://www.eclipse.org/ui/2010/UIModel/application/ui/advanced" xmlns:application="http://www.eclipse.org/ui/2010/UIModel/application" xmlns:basic="http://www.eclipse.org/ui/2010/UIModel/application/ui/basic" xmlns:menu="http://www.eclipse.org/ui/2010/UIModel/application/ui/menu" xmi:id="_otFCIM9cEeKNXMHpcMpqSg" elementId="org.eclipse.e4.ide.application" bindingContexts="_otFCKc9cEeKNXMHpcMpqSg">
+  <children xsi:type="basic:TrimmedWindow" xmi:id="_otFCIc9cEeKNXMHpcMpqSg" label="at.descher.bug62575" width="500" height="400">
+    <children xsi:type="advanced:PerspectiveStack" xmi:id="_otFpM89cEeKNXMHpcMpqSg">
+      <children xsi:type="advanced:Perspective" xmi:id="_otFpNM9cEeKNXMHpcMpqSg">
+        <children xsi:type="basic:PartSashContainer" xmi:id="_otFpNc9cEeKNXMHpcMpqSg">
+          <children xsi:type="basic:PartStack" xmi:id="_otFpNs9cEeKNXMHpcMpqSg">
+            <children xsi:type="basic:Part" xmi:id="_otFpN89cEeKNXMHpcMpqSg" contributionURI="bundleclass://at.descher.bug62575/at.descher.bug62575.parts.SamplePart" label="Sample Part">
+              <menus xsi:type="menu:PopupMenu" xmi:id="_5LPi4NG7EeK0Gcmc-zG2QA" elementId="samplePart.popupmenu">
+                <children xsi:type="menu:DirectMenuItem" xmi:id="_VW0n0NG8EeK0Gcmc-zG2QA" elementId="at.descher.bug62575.directmenuitem.1" label="DirectMenuItem" tooltip="This is the concrete class used to represent a menu item that is directly invoked when selected. The supplied contribution is asked to execute when selected."/>
+              </menus>
+            </children>
+          </children>
+        </children>
+      </children>
+    </children>
+    <mainMenu xmi:id="_otFCOc9cEeKNXMHpcMpqSg" elementId="menu:org.eclipse.ui.main.menu">
+      <children xsi:type="menu:Menu" xmi:id="_otFCOs9cEeKNXMHpcMpqSg" label="File" tooltip="">
+        <children xsi:type="menu:HandledMenuItem" xmi:id="_otFCO89cEeKNXMHpcMpqSg" label="Open" iconURI="platform:/plugin/at.descher.bug62575/icons/sample.gif" tooltip="" command="_otFCMM9cEeKNXMHpcMpqSg"/>
+        <children xsi:type="menu:HandledMenuItem" xmi:id="_otFCPM9cEeKNXMHpcMpqSg" label="Save" iconURI="platform:/plugin/at.descher.bug62575/icons/save_edit.gif" tooltip="" command="_otFCM89cEeKNXMHpcMpqSg"/>
+        <children xsi:type="menu:HandledMenuItem" xmi:id="_otFpMM9cEeKNXMHpcMpqSg" label="Quit" tooltip="Exit the Program" command="_otFCLM9cEeKNXMHpcMpqSg"/>
+      </children>
+      <children xsi:type="menu:Menu" xmi:id="_otFpMc9cEeKNXMHpcMpqSg" label="Help" tooltip="Help">
+        <children xsi:type="menu:HandledMenuItem" xmi:id="_otFpMs9cEeKNXMHpcMpqSg" label="About" command="_otFCNs9cEeKNXMHpcMpqSg"/>
+      </children>
+      <children xsi:type="menu:Menu" xmi:id="_jf9pwM9sEeKQbKyXHY681A" elementId="at.descher.bug62575.menu.0" label="MenuTooltip">
+        <children xsi:type="menu:DirectMenuItem" xmi:id="_o_B6gM9sEeKQbKyXHY681A" elementId="at.descher.bug62575.directmenuitem.0" label="DirectMenuItem" tooltip="This is the concrete class used to represent a menu item that is directly invoked when selected. The supplied contribution is asked to execute when selected."/>
+        <children xsi:type="menu:MenuSeparator" xmi:id="_qx8CkM9sEeKQbKyXHY681A" elementId="at.descher.bug62575.menuseparator.0"/>
+        <children xsi:type="menu:Menu" xmi:id="_tCgXAM9sEeKQbKyXHY681A" elementId="at.descher.bug62575.menu.1" tooltip="Menu Tooltip?"/>
+        <children xsi:type="menu:HandledMenuItem" xmi:id="_4FAwQM9uEeKc35GhGlMTqQ" elementId="at.descher.bug62575.handledmenuitem.0" label="HandledMenuItem" tooltip="This is the concrete UI Model element representing a menu item that is managed through the Commands / Handlers infrastructure." command="_otFCMM9cEeKNXMHpcMpqSg"/>
+      </children>
+    </mainMenu>
+    <trimBars xmi:id="_otFpOM9cEeKNXMHpcMpqSg">
+      <children xsi:type="menu:ToolBar" xmi:id="_otFpOc9cEeKNXMHpcMpqSg" elementId="toolbar:org.eclipse.ui.main.toolbar">
+        <children xsi:type="menu:HandledToolItem" xmi:id="_otFpOs9cEeKNXMHpcMpqSg" iconURI="platform:/plugin/at.descher.bug62575/icons/sample.gif" tooltip="Open a File" command="_otFCMM9cEeKNXMHpcMpqSg"/>
+        <children xsi:type="menu:HandledToolItem" xmi:id="_otFpO89cEeKNXMHpcMpqSg" iconURI="platform:/plugin/at.descher.bug62575/icons/save_edit.gif" tooltip="Save a File" command="_otFCM89cEeKNXMHpcMpqSg"/>
+      </children>
+    </trimBars>
+  </children>
+  <handlers xmi:id="_otFCLc9cEeKNXMHpcMpqSg" elementId="at.descher.bug62575.handler.quitCommand" contributionURI="bundleclass://at.descher.bug62575/at.descher.bug62575.handlers.QuitHandler" command="_otFCLM9cEeKNXMHpcMpqSg"/>
+  <handlers xmi:id="_otFCMc9cEeKNXMHpcMpqSg" elementId="at.descher.bug62575.handler.openCommand" contributionURI="bundleclass://at.descher.bug62575/at.descher.bug62575.handlers.OpenHandler" command="_otFCMM9cEeKNXMHpcMpqSg"/>
+  <handlers xmi:id="_otFCNM9cEeKNXMHpcMpqSg" elementId="at.descher.bug62575.handler.saveCommand" contributionURI="bundleclass://at.descher.bug62575/at.descher.bug62575.handlers.SaveHandler" command="_otFCM89cEeKNXMHpcMpqSg"/>
+  <handlers xmi:id="_otFCN89cEeKNXMHpcMpqSg" elementId="at.descher.bug62575.handler.aboutCommand" contributionURI="bundleclass://at.descher.bug62575/at.descher.bug62575.handlers.AboutHandler" command="_otFCNs9cEeKNXMHpcMpqSg"/>
+  <bindingTables xmi:id="_otFCLs9cEeKNXMHpcMpqSg" bindingContext="_otFCKc9cEeKNXMHpcMpqSg">
+    <bindings xmi:id="_otFCL89cEeKNXMHpcMpqSg" keySequence="M1+Q" command="_otFCLM9cEeKNXMHpcMpqSg"/>
+    <bindings xmi:id="_otFCMs9cEeKNXMHpcMpqSg" keySequence="M1+O" command="_otFCMM9cEeKNXMHpcMpqSg"/>
+    <bindings xmi:id="_otFCNc9cEeKNXMHpcMpqSg" keySequence="M1+S" command="_otFCM89cEeKNXMHpcMpqSg"/>
+    <bindings xmi:id="_otFCOM9cEeKNXMHpcMpqSg" keySequence="M1+A" command="_otFCNs9cEeKNXMHpcMpqSg"/>
+  </bindingTables>
+  <rootContext xmi:id="_otFCKc9cEeKNXMHpcMpqSg" elementId="org.eclipse.ui.contexts.dialogAndWindow" name="In Dialog and Windows">
+    <children xmi:id="_otFCKs9cEeKNXMHpcMpqSg" elementId="org.eclipse.ui.contexts.window" name="In Windows"/>
+    <children xmi:id="_otFCK89cEeKNXMHpcMpqSg" elementId="org.eclipse.ui.contexts.dialog" name="In Dialogs"/>
+  </rootContext>
+  <commands xmi:id="_otFCLM9cEeKNXMHpcMpqSg" elementId="org.eclipse.ui.file.exit" commandName="quitCommand"/>
+  <commands xmi:id="_otFCMM9cEeKNXMHpcMpqSg" elementId="at.descher.bug62575.open" commandName="openCommand"/>
+  <commands xmi:id="_otFCM89cEeKNXMHpcMpqSg" elementId="org.eclipse.ui.file.save" commandName="saveCommand"/>
+  <commands xmi:id="_otFCNs9cEeKNXMHpcMpqSg" elementId="org.eclipse.ui.help.aboutAction" commandName="aboutCommand"/>
+  <addons xmi:id="_otFCIs9cEeKNXMHpcMpqSg" elementId="org.eclipse.e4.core.commands.service" contributionURI="bundleclass://org.eclipse.e4.core.commands/org.eclipse.e4.core.commands.CommandServiceAddon"/>
+  <addons xmi:id="_otFCI89cEeKNXMHpcMpqSg" elementId="org.eclipse.e4.ui.contexts.service" contributionURI="bundleclass://org.eclipse.e4.ui.services/org.eclipse.e4.ui.services.ContextServiceAddon"/>
+  <addons xmi:id="_otFCJM9cEeKNXMHpcMpqSg" elementId="org.eclipse.e4.ui.bindings.service" contributionURI="bundleclass://org.eclipse.e4.ui.bindings/org.eclipse.e4.ui.bindings.BindingServiceAddon"/>
+  <addons xmi:id="_otFCJc9cEeKNXMHpcMpqSg" elementId="org.eclipse.e4.ui.workbench.commands.model" contributionURI="bundleclass://org.eclipse.e4.ui.workbench/org.eclipse.e4.ui.internal.workbench.addons.CommandProcessingAddon"/>
+  <addons xmi:id="_otFCJs9cEeKNXMHpcMpqSg" elementId="org.eclipse.e4.ui.workbench.handler.model" contributionURI="bundleclass://org.eclipse.e4.ui.workbench/org.eclipse.e4.ui.internal.workbench.addons.HandlerProcessingAddon"/>
+  <addons xmi:id="_otFCJ89cEeKNXMHpcMpqSg" elementId="org.eclipse.e4.ui.workbench.contexts.model" contributionURI="bundleclass://org.eclipse.e4.ui.workbench/org.eclipse.e4.ui.internal.workbench.addons.ContextProcessingAddon"/>
+  <addons xmi:id="_otFCKM9cEeKNXMHpcMpqSg" elementId="org.eclipse.e4.ui.workbench.bindings.model" contributionURI="bundleclass://org.eclipse.e4.ui.workbench.swt/org.eclipse.e4.ui.workbench.swt.util.BindingProcessingAddon"/>
+</application:Application>
