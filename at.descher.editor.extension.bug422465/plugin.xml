@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+   <extension
+         point="org.eclipse.e4.tools.emf.ui.elementEditorTab">
+      <elementEditorTab
+            contribution="at.descher.editor.extension.SampleElementtEditorContribution">
+      </elementEditorTab>
+   </extension>
+
+</plugin>
