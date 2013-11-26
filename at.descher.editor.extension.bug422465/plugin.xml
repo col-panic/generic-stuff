@@ -6,6 +6,9 @@
       <elementEditorTab
             contribution="at.descher.editor.extension.SampleElementtEditorContribution">
       </elementEditorTab>
+      <elementEditorTab
+            contribution="at.descher.editor.extension.MWindowElementContribution">
+      </elementEditorTab>
    </extension>
 
 </plugin>

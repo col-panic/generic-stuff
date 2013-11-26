@@ -10,7 +10,7 @@ import org.eclipse.core.runtime.Status;
 import org.eclipse.e4.tools.emf.ui.common.ElementEditorContribution;
 import org.eclipse.e4.ui.model.application.MApplicationElement;
 import org.eclipse.e4.ui.model.application.impl.ApplicationPackageImpl;
-import org.eclipse.e4.ui.model.application.ui.basic.MPart;
+import org.eclipse.e4.ui.model.application.ui.basic.MWindowElement;
 import org.eclipse.emf.databinding.EMFDataBindingContext;
 import org.eclipse.emf.databinding.edit.EMFEditProperties;
 import org.eclipse.emf.databinding.edit.IEMFEditValueProperty;
@@ -26,29 +26,32 @@ import org.eclipse.swt.widgets.Composite;
 import org.eclipse.swt.widgets.Label;
 import org.eclipse.swt.widgets.Text;
 
-public class SampleElementtEditorContribution extends ElementEditorContribution {
+public class MWindowElementContribution extends ElementEditorContribution {
 
-	@Override
-	public Class<? extends MApplicationElement> getContributableTo() {
-		return MPart.class;
+	public MWindowElementContribution() {
+		// TODO Auto-generated constructor stub
 	}
 
 	@Override
 	public String getTabLabel() {
-		return "MPartAddition";
+		return "MWindowElement";
+	}
+
+	@Override
+	public Class<? extends MApplicationElement> getContributableTo() {
+		return MWindowElement.class;
 	}
 
 	@Override
 	public void createContributedForm(Composite parent,
-			EMFDataBindingContext context, WritableValue master,
-			EditingDomain editingDomain) {
+			EMFDataBindingContext context, WritableValue master, EditingDomain editingDomain) {
 
 		IWidgetValueProperty textProp = WidgetProperties.text(SWT.Modify);
 
-		IEMFEditValueProperty modelProp = EMFEditProperties
-				.value(editingDomain,
-						ApplicationPackageImpl.Literals.APPLICATION_ELEMENT__ELEMENT_ID);
-
+		IEMFEditValueProperty modelProp = EMFEditProperties.value(
+				editingDomain,
+				ApplicationPackageImpl.Literals.APPLICATION_ELEMENT__ELEMENT_ID);
+		
 		createTextField(parent, "SampleLabel", "SampleTooltip", master,
 				context, textProp, modelProp, "sampleWarning");
 	}
