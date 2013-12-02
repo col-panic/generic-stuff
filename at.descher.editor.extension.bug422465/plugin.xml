@@ -1,13 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?eclipse version="3.4"?>
 <plugin>
+   <extension point="org.eclipse.emf.ecore.generated_package">
+      <!-- @generated documentation -->
+      <package
+            uri="http://www.ecrit.at/model/documentation"
+            class="documentation.DocumentationPackage"
+            genModel="model/documentation.genmodel"/>
+   </extension>
    <extension
          point="org.eclipse.e4.tools.emf.ui.elementEditorTab">
       <elementEditorTab
-            contribution="at.descher.editor.extension.SampleElementtEditorContribution">
-      </elementEditorTab>
-      <elementEditorTab
-            contribution="at.descher.editor.extension.MWindowElementContribution">
+            contribution="at.descher.editor.extension.ApplicationElementDocumentationContribution">
       </elementEditorTab>
    </extension>
 

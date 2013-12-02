@@ -7,7 +7,7 @@ import org.eclipse.core.databinding.validation.IValidator;
 import org.eclipse.core.databinding.validation.ValidationStatus;
 import org.eclipse.core.runtime.IStatus;
 import org.eclipse.core.runtime.Status;
-import org.eclipse.e4.tools.emf.ui.common.ElementEditorContribution;
+import org.eclipse.e4.tools.emf.ui.common.AbstractElementEditorContribution;
 import org.eclipse.e4.ui.model.application.MApplicationElement;
 import org.eclipse.e4.ui.model.application.impl.ApplicationPackageImpl;
 import org.eclipse.e4.ui.model.application.ui.basic.MWindowElement;
@@ -26,7 +26,7 @@ import org.eclipse.swt.widgets.Composite;
 import org.eclipse.swt.widgets.Label;
 import org.eclipse.swt.widgets.Text;
 
-public class MWindowElementContribution extends ElementEditorContribution {
+public class MWindowElementContribution extends AbstractElementEditorContribution {
 
 	public MWindowElementContribution() {
 		// TODO Auto-generated constructor stub
@@ -43,7 +43,7 @@ public class MWindowElementContribution extends ElementEditorContribution {
 	}
 
 	@Override
-	public void createContributedForm(Composite parent,
+	public void createContributedEditorTab(Composite parent,
 			EMFDataBindingContext context, WritableValue master, EditingDomain editingDomain) {
 
 		IWidgetValueProperty textProp = WidgetProperties.text(SWT.Modify);
