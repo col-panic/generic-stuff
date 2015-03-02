@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.8"/>
+	<classpathentry kind="lib" path="/Users/marco/Development/Eclipse/eclipse-mars/plugins/org.eclipse.osgi_3.10.100.v20150129-2253.jar" sourcepath="/Users/marco/Development/Eclipse/eclipse-mars/plugins/org.eclipse.osgi.source_3.10.100.v20150129-2253.jar"/>
+	<classpathentry kind="lib" path="/Users/marco/Development/Eclipse/eclipse-mars/plugins/org.eclipse.core.commands_3.6.100.v20141026-0121.jar" sourcepath="/Users/marco/Development/Eclipse/eclipse-mars/plugins/org.eclipse.core.commands.source_3.6.100.v20141026-0121.jar"/>
+	<classpathentry kind="lib" path="/Users/marco/Development/Eclipse/eclipse-mars/plugins/org.eclipse.equinox.common_3.6.200.v20141113-1308.jar" sourcepath="/Users/marco/Development/Eclipse/eclipse-mars/plugins/org.eclipse.equinox.common.source_3.6.200.v20141113-1308.jar"/>
+	<classpathentry kind="lib" path="/Users/marco/Development/Eclipse/eclipse-mars/plugins/org.eclipse.equinox.registry_3.5.400.v20140428-1507.jar" sourcepath="/Users/marco/Development/Eclipse/eclipse-mars/plugins/org.eclipse.equinox.registry.source_3.5.400.v20140428-1507.jar"/>
+	<classpathentry kind="lib" path="/Users/marco/Development/Eclipse/eclipse-mars/plugins/org.eclipse.core.runtime_3.10.0.v20150112-1422.jar" sourcepath="/Users/marco/Development/Eclipse/eclipse-mars/plugins/org.eclipse.core.runtime.source_3.10.0.v20150112-1422.jar"/>
+	<classpathentry kind="lib" path="/Users/marco/Development/Eclipse/eclipse-mars/plugins/org.eclipse.text_3.5.400.v20140915-2351.jar" sourcepath="/Users/marco/Development/Eclipse/eclipse-mars/plugins/org.eclipse.text.source_3.5.400.v20140915-2351.jar"/>
+	<classpathentry kind="lib" path="/Users/marco/Development/Eclipse/eclipse-mars/plugins/org.eclipse.swt.cocoa.macosx.x86_64_3.104.0.v20150203-2243.jar" sourcepath="/Users/marco/Development/Eclipse/eclipse-mars/plugins/org.eclipse.swt.cocoa.macosx.x86_64.source_3.104.0.v20150203-2243.jar"/>
+	<classpathentry kind="lib" path="/Users/marco/Development/Eclipse/eclipse-mars/plugins/org.eclipse.jface_3.11.0.v20150121-1751.jar" sourcepath="/Users/marco/Development/Eclipse/eclipse-mars/plugins/org.eclipse.jface.source_3.11.0.v20150121-1751.jar"/>
+	<classpathentry kind="lib" path="/Users/marco/Development/Eclipse/eclipse-mars/plugins/org.eclipse.jface.text_3.10.0.v20150112-1146.jar" sourcepath="/Users/marco/Development/Eclipse/eclipse-mars/plugins/org.eclipse.jface.text.source_3.10.0.v20150112-1146.jar"/>
+	<classpathentry kind="lib" path="/Users/marco/Development/Eclipse/eclipse-mars/plugins/org.eclipse.ui.workbench_3.107.0.v20150127-1326.jar" sourcepath="/Users/marco/Development/Eclipse/eclipse-mars/plugins/org.eclipse.ui.workbench.source_3.107.0.v20150127-1326.jar"/>
+	<classpathentry kind="lib" path="/Users/marco/Development/Eclipse/eclipse-mars/plugins/com.ibm.icu_54.1.1.v201501272100.jar" sourcepath="/Users/marco/Development/Eclipse/eclipse-mars/plugins/com.ibm.icu.source_54.1.1.v201501272100.jar"/>
+	<classpathentry kind="lib" path="/Users/marco/Development/Eclipse/eclipse-mars/plugins/org.eclipse.ui.forms_3.6.200.v20150109-1110.jar" sourcepath="/Users/marco/Development/Eclipse/eclipse-mars/plugins/org.eclipse.ui.forms.source_3.6.200.v20150109-1110.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>
